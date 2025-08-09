@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Shradha Dental Care</title>
+
+<style>
+/* ===== Color Variables ===== */
+:root {
+  --federal-blue: #03045e;
+  --honolulu-blue: #0077b6;
+  --pacific-cyan: #00b4d8;
+  --non-photo-blue: #90e0ef;
+  --light-cyan: #caf0f8;
+
+  --gradient: linear-gradient(90deg, var(--federal-blue), var(--honolulu-blue), var(--pacific-cyan));
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--federal-blue);
+  background: url(images/bg2.jpg);
+}
+
+section {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white layer */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* ===== Navbar ===== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--gradient);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px;
+  color: white;
+  background-image: url(images/22.jpg) ;
+  background-size: cover;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: var(--honolulu-blue);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--pacific-cyan);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 20px;
+}
+
+h2.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--federal-blue);
+}
+
+/* ===== Services ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== Gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Contact ===== */
+.contact {
+  text-align: center;
+ 
+}
+
+
+.contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--honolulu-blue);
+}
+
+.contact button {
+  background: var(--gradient);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--federal-blue);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.background image{
+      background-size: 150px;
+  width: 200px;
+  height: 200px;
+
+}
+video{
+  position: relative;
+  left: 13px;
+}
+
+</style>
+</head>
+<body>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Shradha Dental Care</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>Dr. Shradha</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home" style="background-image:url('images/hero-bg.jpg')">
+  <div class="hero-text">
+    <form action="images/middle-finger.jpg">
+      <h2>Your Smile, Our Priority</h2>
+      <p>Providing quality dental care with a gentle touch.</p>
+      <button class="btn">Book Appointment</button>
+    </form>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2 class="section-title">About Us</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    Welcome to Dr. Shradha Dental Care – your trusted dental clinic for a brighter smile.
+  </p>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <div class="services">
+    <div class="service-card">
+      <img src="images/service1.jpg" alt="Teeth Cleaning">
+      <h3>Teeth Cleaning</h3>
+      <p>Professional cleaning to keep your smile bright.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/service2.jpg" alt="Braces">
+      <h3>Orthodontics</h3>
+      <p>Perfectly aligned teeth with our braces services.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/service3.jpg" alt="Whitening">
+      <h3>Teeth Whitening</h3>
+      <p>Whiten your teeth safely and effectively.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <div class="gallery">
+    <img src="images/gallery1.jpg" alt="Before and After" height="505px">
+    <video width="350" height="505" autoplay muted loop>
+      <source src="images/video1.mp4" type="video/mp4">
+    </video>
+    <img src="images/gallery2.jpg" alt="Happy Patient">
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p>Hassan, Karnataka (Shadipur)</p>
+  <p>Phone: +91 9972349717 | Email: info@drshradha.com</p>
+  <form action="images/middle-finger.jpg">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Dental Problem" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Dr. Shradha Dental Care. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+<script>
+// Smooth scroll
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
